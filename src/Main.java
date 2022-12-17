@@ -55,8 +55,8 @@ public class Main {
         for (int i = 0; i < payments.length; i++) {
             amountPayments += payments[i];
         }
-        double averagePayout = amountPayments / 30;
-        String result = String.format("%.2f",averagePayout); //наков после запятой. Источник знаний https://javarush.com/groups/posts/2773-okruglenie-chisel-v-java
+        double averagePayout = amountPayments / payments.length;
+        String result = String.format("%.2f",averagePayout); //знаков после запятой. Источник знаний https://javarush.com/groups/posts/2773-okruglenie-chisel-v-java
         System.out.println("Средняя сумма трат за месяц составила " + result + " рублей");
         System.out.println();
     }
